@@ -31,6 +31,13 @@ function getCountryTranslatedName(isoCode, language){
  */
 function getCountriesBySubregion(subregion){
     //Complete with your code
+    let CountriesSubregion = []
+    countries.forEach(country =>{
+        if (country.subregion == subregion){
+            CountriesSubregion.push(country.name)
+        }
+     } )
+     console.log(CountriesSubregion)
 }
 
 function main() {
